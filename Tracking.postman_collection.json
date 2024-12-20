@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "adf26f22-e040-4e5c-9cf4-0da940ed51a8",
+		"name": "Tracking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5841128"
+	},
+	"item": [
+		{
+			"name": "Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apikey\": \"{{apiKey}}\",\r\n    \"cbl\": \"ONEYXMNEF7649500\",\r\n    \"eventType\" : \"actual\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/gettracking",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"gettracking"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apikey\": \"{{apiKey}}\",\r\n    \"cbl\": \"ONEYXMNEF7649500\",\r\n    \"eventType\" : \"actual\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/gettracking",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"gettracking"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1637"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 20 Dec 2024 06:07:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "MSGKEY",
+							"value": "api/gettracking"
+						},
+						{
+							"key": "MSGID",
+							"value": "676509b41373e9ac9caa8997"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msgkey\": null,\n    \"msgid\": null,\n    \"cbl\": \"ONEYXMNEF7649500\",\n    \"cnt\": \"\",\n    \"result\": {\n        \"UNIQUEID\": \"B9804740-D90A-4577-B21A-BD664AF44F55\",\n        \"CBL\": \"ONEYXMNEF7649500\",\n        \"BKG\": \"\",\n        \"BILLTYPE\": 2,\n        \"REFERENCES\": null,\n        \"CARRIER\": {\n            \"SCAC\": \"ONEY\",\n            \"Name\": \"One Ocean Network Express\",\n            \"CommonName\": \"ONE\",\n            \"Type\": 1\n        },\n        \"CONTAINERS\": [\n            {\n                \"CNT\": \"UETU4060967\",\n                \"CNTTYPE\": {\n                    \"Tag\": \"40GP\",\n                    \"ShortName\": \"40' GP DRY\",\n                    \"LongName\": \"40 FT STANDARD DRY\",\n                    \"AlternativeNamesText\": null,\n                    \"LengthInFeet\": 40,\n                    \"WidthInFeet\": 8,\n                    \"HeightInFeet\": 8.5,\n                    \"CapacityInCubicFeet\": 2397,\n                    \"Description\": \"40' x 8'6\\\" Dry Cargo\"\n                },\n                \"POR\": {\n                    \"LocationText\": \"Xiamen\",\n                    \"UnLocode\": \"CNXAM\",\n                    \"City\": \"Xiamen\",\n                    \"Province\": \"FJ\",\n                    \"CountryCode\": \"CN\",\n                    \"GeoWayPoints\": \"2427N 11806E\",\n                    \"OLSENTZ\": \"Asia/Shanghai\",\n                    \"MSTZ\": \"China Standard Time\"\n                },\n                \"POL\": {\n                    \"LocationText\": \"Xiamen\",\n                    \"UnLocode\": \"CNXAM\",\n                    \"City\": \"Xiamen\",\n                    \"Province\": \"FJ\",\n                    \"CountryCode\": \"CN\",\n                    \"GeoWayPoints\": \"2427N 11806E\",\n                    \"OLSENTZ\": \"Asia/Shanghai\",\n                    \"MSTZ\": \"China Standard Time\"\n                },\n                \"POD\": {\n                    \"LocationText\": \"Norfolk\",\n                    \"UnLocode\": \"USORF\",\n                    \"City\": \"Norfolk\",\n                    \"Province\": \"VA\",\n                    \"CountryCode\": \"US\",\n                    \"GeoWayPoints\": \"3651N 07617W\",\n                    \"OLSENTZ\": \"America/New_York\",\n                    \"MSTZ\": \"Eastern Standard Time\"\n                },\n                \"DEL\": {\n                    \"LocationText\": \"Norfolk\",\n                    \"UnLocode\": \"USORF\",\n                    \"City\": \"Norfolk\",\n                    \"Province\": \"VA\",\n                    \"CountryCode\": \"US\",\n                    \"GeoWayPoints\": \"3651N 07617W\",\n                    \"OLSENTZ\": \"America/New_York\",\n                    \"MSTZ\": \"Eastern Standard Time\"\n                },\n                \"MILESTONES\": {\n                    \"POR\": \"CNXAM\",\n                    \"POL\": \"CNXAM\",\n                    \"POD\": \"USORF\",\n                    \"DEL\": \"USORF\",\n                    \"SHIPMENTTERMS\": \"PORT\",\n                    \"VESSEL\": \"HMM DREAM\",\n                    \"VOYAGE\": \"0056E\",\n                    \"IMO\": \"9637222\",\n                    \"MMSI\": \"441981000\",\n                    \"ATA\": null,\n                    \"ATD\": \"2024-11-23T22:30:00\",\n                    \"ETD\": \"2024-11-23T22:30:00\",\n                    \"ETA\": \"2025-01-17T19:00:00\",\n                    \"ETAFINAL\": null,\n                    \"UpdatedETD\": null,\n                    \"UpdatedETA\": null,\n                    \"UpdatedETAFINAL\": null,\n                    \"TERMINAL\": \"NORFOLK INTL\",\n                    \"FIRMS\": \"L005\",\n                    \"TERMINALCODE\": \"NIT\",\n                    \"PODDISCHARGE\": null,\n                    \"EMPTYRETURNFACILITY\": \"NORFOLK INTL\",\n                    \"EMPTYRETURNFACILITYCODE\": \"NIT\",\n                    \"LFD\": null,\n                    \"LFDDETENTION\": null,\n                    \"DISCHARGE\": null,\n                    \"DERAMPED\": null,\n                    \"AVAILABLE\": null,\n                    \"PICKEDUP\": null,\n                    \"DELIVERED\": null,\n                    \"EMPTYRETURN\": null,\n                    \"OBL\": \"Nov-27-2024\",\n                    \"CUSTOMS\": \"NOT RELEASED\",\n                    \"FREIGHT\": \"NOT RELEASED\",\n                    \"NOTES\": null,\n                    \"MILESTONEINDICATOR\": \"ON-THE-WATER\"\n                },\n                \"EVENTS\": [\n                    {\n                        \"Sequence\": 1,\n                        \"EventCode\": \"E1\",\n                        \"Description\": \"EMPTY TO SHIPPER\",\n                        \"VesselName\": null,\n                        \"VoyageNumber\": null,\n                        \"IMO\": null,\n                        \"MMSI\": null,\n                        \"RailCar\": null,\n                        \"Mode\": null,\n                        \"IsEstimate\": false,\n                        \"EventDate\": \"2024-11-17T22:21:00\",\n                        \"TimeZone\": \"China Standard Time\",\n                        \"IANATZ\": \"Asia/Shanghai\",\n                        \"EventLocation\": {\n                            \"LocationText\": \"Xiamen\",\n                            \"UnLocode\": \"CNXAM\",\n                            \"City\": \"Xiamen\",\n                            \"Province\": \"FJ\",\n                            \"CountryCode\": \"CN\",\n                            \"GeoWayPoints\": \"2427N 11806E\",\n                            \"OLSENTZ\": \"Asia/Shanghai\",\n                            \"MSTZ\": \"China Standard Time\"\n                        },\n                        \"Facility\": null,\n                        \"FacilityCode\": null,\n                        \"Reference\": \"25060468\",\n                        \"order\": -1,\n                        \"disposition\": null\n                    },\n                    {\n                        \"Sequence\": 2,\n                        \"EventCode\": \"G1\",\n                        \"Description\": \"GATE IN TO OUTBOUND\",\n                        \"VesselName\": null,\n                        \"VoyageNumber\": null,\n                        \"IMO\": null,\n                        \"MMSI\": null,\n                        \"RailCar\": null,\n                        \"Mode\": null,\n                        \"IsEstimate\": false,\n                        \"EventDate\": \"2024-11-18T18:06:00\",\n                        \"TimeZone\": \"China Standard Time\",\n                        \"IANATZ\": \"Asia/Shanghai\",\n                        \"EventLocation\": {\n                            \"LocationText\": \"Xiamen\",\n                            \"UnLocode\": \"CNXAM\",\n                            \"City\": \"Xiamen\",\n                            \"Province\": \"FJ\",\n                            \"CountryCode\": \"CN\",\n                            \"GeoWayPoints\": \"2427N 11806E\",\n                            \"OLSENTZ\": \"Asia/Shanghai\",\n                            \"MSTZ\": \"China Standard Time\"\n                        },\n                        \"Facility\": null,\n                        \"FacilityCode\": null,\n                        \"Reference\": \"25060469\",\n                        \"order\": -1,\n                        \"disposition\": null\n                    },\n                    {\n                        \"Sequence\": 3,\n                        \"EventCode\": \"LB\",\n                        \"Description\": \"LOADED ON BOARD\",\n                        \"VesselName\": \"HMM DREAM\",\n                        \"VoyageNumber\": \"0056E\",\n                        \"IMO\": \"9637222\",\n                        \"MMSI\": \"441981000\",\n                        \"RailCar\": null,\n                        \"Mode\": \"Vessel\",\n                        \"IsEstimate\": false,\n                        \"EventDate\": \"2024-11-23T13:58:00\",\n                        \"TimeZone\": \"China Standard Time\",\n                        \"IANATZ\": \"Asia/Shanghai\",\n                        \"EventLocation\": {\n                            \"LocationText\": \"Xiamen\",\n                            \"UnLocode\": \"CNXAM\",\n                            \"City\": \"Xiamen\",\n                            \"Province\": \"FJ\",\n                            \"CountryCode\": \"CN\",\n                            \"GeoWayPoints\": \"2427N 11806E\",\n                            \"OLSENTZ\": \"Asia/Shanghai\",\n                            \"MSTZ\": \"China Standard Time\"\n                        },\n                        \"Facility\": null,\n                        \"FacilityCode\": null,\n                        \"Reference\": \"25060470\",\n                        \"order\": -1,\n                        \"disposition\": null\n                    },\n                    {\n                        \"Sequence\": 4,\n                        \"EventCode\": \"DP\",\n                        \"Description\": \"DEPARTED POL\",\n                        \"VesselName\": \"HMM DREAM\",\n                        \"VoyageNumber\": \"0056E\",\n                        \"IMO\": \"9637222\",\n                        \"MMSI\": \"441981000\",\n                        \"RailCar\": null,\n                        \"Mode\": \"Vessel\",\n                        \"IsEstimate\": false,\n                        \"EventDate\": \"2024-11-23T22:30:00\",\n                        \"TimeZone\": \"China Standard Time\",\n                        \"IANATZ\": \"Asia/Shanghai\",\n                        \"EventLocation\": {\n                            \"LocationText\": \"Xiamen\",\n                            \"UnLocode\": \"CNXAM\",\n                            \"City\": \"Xiamen\",\n                            \"Province\": \"FJ\",\n                            \"CountryCode\": \"CN\",\n                            \"GeoWayPoints\": \"2427N 11806E\",\n                            \"OLSENTZ\": \"Asia/Shanghai\",\n                            \"MSTZ\": \"China Standard Time\"\n                        },\n                        \"Facility\": null,\n                        \"FacilityCode\": null,\n                        \"Reference\": \"25060471\",\n                        \"order\": -1,\n                        \"disposition\": null\n                    }\n                ],\n                \"ROUTING\": null\n            }\n        ]\n    },\n    \"cref\": [\n        \"EXAMPLE-UNIQUE-REF-1\",\n        \"CLIENT-PO-27\"\n    ],\n    \"ack\": 1,\n    \"exceptions\": null,\n    \"ctoken\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Request not registered failure",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/gettracking",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"gettracking"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apikey\": \"{{apiKey}}\",\r\n    \"cbl\": \"MEDUXM7649500\",\r\n    \"eventType\" : \"actual\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/gettracking",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"gettracking"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "286"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 20 Dec 2024 06:08:30 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "MSGKEY",
+							"value": "api/gettracking"
+						},
+						{
+							"key": "MSGID",
+							"value": "676509de1373e9ac9caa8998"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msgkey\": null,\n    \"msgid\": null,\n    \"cbl\": \"MEDUXM7649500\",\n    \"cnt\": \"\",\n    \"result\": null,\n    \"cref\": null,\n    \"ack\": 0,\n    \"exceptions\": [\n        {\n            \"errorcode\": \"ER002\",\n            \"msg\": \"BOL NOT REGISTERED\",\n            \"validationcodes\": null,\n            \"validationdetails\": null,\n            \"suggestion\": null\n        }\n    ],\n    \"ctoken\": \"\"\n}"
+				}
+			]
+		}
+	]
+}

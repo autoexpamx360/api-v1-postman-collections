@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "b07e8af7-0591-4ded-a392-b4c0041e0938",
+		"name": "Register",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5841128"
+	},
+	"item": [
+		{
+			"name": "Request shipment number only",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apikey\": \"{{apiKey}}\",\r\n    \"cbl\": \"ONEYXMNEF7649500\",\r\n    \"refs\": [\"EXAMPLE-UNIQUE-REF-1\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/register",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apikey\": \"{{apiKey}}\",\r\n    \"cbl\": \"ONEYXMNEF7649500\",\r\n    \"refs\": [\"EXAMPLE-UNIQUE-REF-1\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "296"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 20 Dec 2024 04:53:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cbl\": \"ONEYXMNEF7649500\",\n    \"load\": null,\n    \"updated_cbl\": \"ONEYXMNEF7649500\",\n    \"cnt\": \"\",\n    \"hbl\": \"\",\n    \"scac\": null,\n    \"enablecallback\": false,\n    \"callbackauthkey\": null,\n    \"callbackurl\": null,\n    \"callback\": null,\n    \"refs\": [\n        \"EXAMPLE-UNIQUE-REF-1\"\n    ],\n    \"customattributes\": null,\n    \"ack\": 1,\n    \"exceptions\": null,\n    \"ctoken\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Request with enabled callback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apikey\": \"{{apiKey}}\",\r\n    \"enablecallback\": true,\r\n    \"callbackurl\": \"https://api.amx360.com/api/pushtracking\",\r\n    \"cbl\": \"ONEYXMNEF7649500\",\r\n    \"refs\": [\"CLIENT-PO-27\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/register",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apikey\": \"{{apiKey}}\",\r\n    \"enablecallback\": true,\r\n    \"callbackurl\": \"https://api.amx360.com/api/pushtracking\",\r\n    \"cbl\": \"ONEYXMNEF7649500\",\r\n    \"refs\": [\"CLIENT-PO-27\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "320"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 20 Dec 2024 04:56:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cbl\": \"ONEYXMNEF7649500\",\n    \"load\": null,\n    \"updated_cbl\": \"ONEYXMNEF7649500\",\n    \"cnt\": \"\",\n    \"hbl\": \"\",\n    \"scac\": null,\n    \"enablecallback\": true,\n    \"callbackauthkey\": null,\n    \"callbackurl\": \"https://api.amx360.com/api/pushtracking\",\n    \"callback\": null,\n    \"refs\": [\n        \"CLIENT-PO-27\"\n    ],\n    \"customattributes\": null,\n    \"ack\": 1,\n    \"exceptions\": null,\n    \"ctoken\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Request Failure",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apikey\": \"{{apiKey}}\",\r\n    \"cbl\": \"ABCX12EF7649500\",\r\n    \"refs\": [\"CLIENT-PO-28\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/register",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apikey\": \"{{apiKey}}\",\r\n    \"cbl\": \"ABCX12EF7649500\",\r\n    \"refs\": [\"CLIENT-PO-28\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "406"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 20 Dec 2024 04:59:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cbl\": \"ABCX12EF7649500\",\n    \"load\": null,\n    \"updated_cbl\": \"ABCX12EF7649500\",\n    \"cnt\": \"\",\n    \"hbl\": \"\",\n    \"scac\": null,\n    \"enablecallback\": false,\n    \"callbackauthkey\": null,\n    \"callbackurl\": null,\n    \"callback\": null,\n    \"refs\": [\n        \"CLIENT-PO-28\"\n    ],\n    \"customattributes\": null,\n    \"ack\": 0,\n    \"exceptions\": [\n        {\n            \"errorcode\": \"ER106\",\n            \"msg\": \"INVALID BOL\",\n            \"validationcodes\": \"BOL-4\",\n            \"validationdetails\": [\n                {\n                    \"code\": \"BOL-4\",\n                    \"category\": \"BOL\",\n                    \"description\": \"CBL SCAC IS INCORRECT\"\n                }\n            ],\n            \"suggestion\": null\n        }\n    ],\n    \"ctoken\": \"\"\n}"
+				}
+			]
+		}
+	]
+}
